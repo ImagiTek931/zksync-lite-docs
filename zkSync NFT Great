@@ -1,0 +1,31 @@
+# NFT zkSync Integration Project
+
+Welcome to the NFT zkSync Integration Project! This project demonstrates the integration of non-fungible tokens (NFTs) with zkSync, a layer 2 scaling solution for Ethereum.
+
+## Overview
+
+This project consists of two main Solidity smart contracts:
+
+1. **MyZkSyncNFT.sol**: This contract allows users to mint NFTs and transfer them to zkSync for scalability.
+
+2. **ZkSyncNFTMarketplace.sol**: A simple NFT marketplace contract where users can list their NFTs for sale and others can purchase them using cryptocurrency.
+
+## Contracts
+
+### MyZkSyncNFT.sol
+
+This contract allows users to mint NFTs and transfer them to zkSync. Each NFT minting is tracked, and only the minter can transfer the NFT to zkSync.
+
+#### Functions:
+
+- `mintNFT()`: Mint a new NFT.
+- `transferNFTToZkSync(uint256 tokenId)`: Transfer a specific NFT to zkSync.
+
+### ZkSyncNFTMarketplace.sol
+
+This contract facilitates the buying and selling of NFTs using cryptocurrency. NFTs are listed for sale, and buyers can purchase them, triggering zkSync integration.
+
+#### Functions:
+
+- `listNFTForSale(uint256 tokenId, uint256 price)`: List an NFT for sale.
+-
